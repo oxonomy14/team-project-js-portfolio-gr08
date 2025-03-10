@@ -1,0 +1,141 @@
+/* ANIMATION */
+@keyframes marqueeLine {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* COVERS */
+.cover-wrapper {
+  height: 508px;
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-image: url(/img/covers/back-mob.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media screen and (min-resolution: 2dppx),
+  (min-resolution: 192dpi),
+  (-webkit-min-device-pixel-ratio: 2) {
+  .cover-wrapper {
+    background-image: url(/img/covers/back-mob-2x.png);
+  }
+}
+
+.sub-wrapper {
+  position: absolute;
+  transform: rotate(16deg) translateY(-50%);
+  width: 100%;
+}
+
+.sub-wrapper:nth-child(2) {
+  left: -175px;
+  top: 150px;
+}
+
+.sub-wrapper:nth-child(3) {
+  left: -105px;
+  top: 370px;
+}
+
+.sub-wrapper:nth-child(4) {
+  left: -161px;
+  top: 555px;
+}
+
+.cover-list {
+  display: flex;
+  gap: 24px;
+}
+
+.cover-items {
+  flex: 0 0 auto;
+}
+
+.cover-img {
+  width: auto;
+  object-fit: cover;
+}
+
+.in-view {
+  animation: marqueeLine 10s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+@media only screen and (min-width: 768px) {
+  .cover-wrapper {
+    max-width: 768px;
+    min-width: none;
+    height: 960px;
+    background-image: url(/img/covers/back-tab.png);
+  }
+
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .cover-wrapper {
+      background-image: url(/img/covers/back-tab-2x.png);
+    }
+  }
+
+  .sub-wrapper:nth-child(2) {
+    left: -384px;
+    top: 270px;
+  }
+
+  .sub-wrapper:nth-child(3) {
+    left: -105px;
+    top: 730px;
+  }
+
+  .sub-wrapper:nth-child(4) {
+    left: -161px;
+    top: 1100px;
+  }
+
+  .cover-list {
+    gap: 48px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .cover-wrapper {
+    max-width: 1440px;
+    background-image: url(/img/covers/back-desk.png);
+  }
+
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 2dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .cover-wrapper {
+      background-image: url(/img/covers/back-desk-2x.png);
+    }
+  }
+
+  .sub-wrapper:first-child {
+    left: 347px;
+    top: 216px;
+  }
+
+  .sub-wrapper:nth-child(2) {
+    left: -47px;
+    top: 476px;
+  }
+
+  .sub-wrapper:nth-child(3) {
+    left: -20px;
+    top: 860px;
+  }
+
+  .sub-wrapper:nth-child(4) {
+    left: -21px;
+    top: 1240px;
+  }
+}
