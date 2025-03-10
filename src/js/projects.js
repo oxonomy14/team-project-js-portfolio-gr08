@@ -4,7 +4,7 @@ import 'swiper/css/bundle';
 const elemProjectBtnNext = document.querySelector('.swiper-project-btn-next');
 const elemProjectBtnPrev = document.querySelector('.swiper-project-btn-prev');
 
-const swiperProject = new Swiper('.swiper-project-list', {
+const swiperProject = new Swiper('.swiperrr', {
   speed: 900,
   spaceBetween: 400,
   on: {
@@ -49,11 +49,11 @@ window.addEventListener('keydown', evt => {
   if (evt.code === 'ArrowRight') {
     swiperProject.slideNext();
     updateButtonsState(); // Оновлюємо стан кнопок
-    console.log('Натискається клавіша Вправо');
+    // console.log('Натискається клавіша Вправо');
   } else if (evt.code === 'ArrowLeft') {
     swiperProject.slidePrev();
     updateButtonsState(); // Оновлюємо стан кнопок;
-    console.log('Натискається клавіша Вліво');
+    //  console.log('Натискається клавіша Вліво');
   }
 });
 
