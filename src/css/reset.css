@@ -19,12 +19,14 @@ ul {
 }
 
 a {
-  color: currentColor;
+  display: inline-flex;
   text-decoration: none;
 }
 
 button {
   cursor: pointer;
+  border: none;
+  border-radius: 0px;
 }
 
 img {
