@@ -1,11 +1,10 @@
 /* ANIMATION */
 @keyframes marqueeLine {
-  from {
-    transform: translateX(-20%);
+  0% {
+    transform: translateX(0);
   }
-
-  to {
-    transform: translateX(-140%);
+  100% {
+    transform: translateX(-100%);
   }
 }
 
@@ -66,10 +65,8 @@
 }
 
 .in-view {
-  animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
+  animation: marqueeLine 10s linear infinite;
+  animation-fill-mode: forwards;
 }
 
 @media only screen and (min-width: 768px) {
