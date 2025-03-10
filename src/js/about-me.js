@@ -1,5 +1,7 @@
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
 const elemSkillsBtnNext = document.querySelector('.skills-arrow-next');
 
@@ -35,3 +37,13 @@ elemSkillsBtnNext.addEventListener('click', evt => {
 
   swiperSkills.slideNext();
 });
+
+const accordionParams = {
+  openOnInit: [0],
+  duration: 400,
+  toggle: 'click',
+  easing: 'ease-in-out',
+  scrollTo: true, // Прокручує до відкритого елемента
+};
+
+new Accordion('.content-container', accordionParams);
