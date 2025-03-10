@@ -1,5 +1,26 @@
 /* BENEFITS */
 
+.container-benefits {
+}
+.benefits-head {
+}
+.benefits-wrapper {
+}
+.benefits-list {
+}
+.benefits-cards {
+}
+.benefits-icon {
+}
+.benefits-cards-head {
+}
+.benefits-cards-text {
+}
+.benefits-icon-content {
+}
+.btn-benefits {
+}
+
 .benefits-head {
   font-weight: 600;
   font-size: 16px;
@@ -45,7 +66,7 @@
   height: 48px;
   align-content: center;
   margin-bottom: 64px;
-  padding: 12px;
+  padding: 10px;
 }
 
 .benefits-cards-head {
@@ -54,18 +75,15 @@
   line-height: 150%;
   letter-spacing: -0.02em;
   color: #fafafa;
-
   margin-bottom: 8px;
 }
 
 .benefits-cards-text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
   color: rgba(250, 250, 250, 0.6);
-  width: 296px;
-  display: block;
 }
 .btn-benefits {
   display: block;
