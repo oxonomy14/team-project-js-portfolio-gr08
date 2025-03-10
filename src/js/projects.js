@@ -4,7 +4,7 @@ import 'swiper/css/bundle';
 const elemProjectBtnNext = document.querySelector('.swiper-project-btn-next');
 const elemProjectBtnPrev = document.querySelector('.swiper-project-btn-prev');
 
-const swiper = new Swiper('.swiper-project-list', {
+const swiperProject = new Swiper('.swiper-project-list', {
   speed: 900,
   spaceBetween: 400,
   on: {
@@ -16,7 +16,7 @@ const swiper = new Swiper('.swiper-project-list', {
 
 // Функція для оновлення стану кнопок
 function updateButtonsState() {
-  if (swiper.isBeginning) {
+  if (swiperProject.isBeginning) {
     elemProjectBtnPrev.classList.add('swiper-project-btn-disabled');
     elemProjectBtnPrev.setAttribute('disabled', 'true');
   } else {
@@ -24,7 +24,7 @@ function updateButtonsState() {
     elemProjectBtnPrev.removeAttribute('disabled');
   }
 
-  if (swiper.isEnd) {
+  if (swiperProject.isEnd) {
     elemProjectBtnNext.classList.add('swiper-project-btn-disabled');
     elemProjectBtnNext.setAttribute('disabled', 'true');
   } else {
@@ -34,12 +34,12 @@ function updateButtonsState() {
 }
 
 elemProjectBtnNext.addEventListener('click', evt => {
-  swiper.slideNext();
+  swiperProject.slideNext();
   updateButtonsState(); // Оновлюємо стан кнопок
 });
 
 elemProjectBtnPrev.addEventListener('click', evt => {
-  swiper.slidePrev();
+  swiperProject.slidePrev();
   updateButtonsState(); // Оновлюємо стан кнопок;
 });
 
@@ -47,11 +47,11 @@ elemProjectBtnPrev.addEventListener('click', evt => {
 
 window.addEventListener('keydown', evt => {
   if (evt.code === 'ArrowRight') {
-    swiper.slideNext();
+    swiperProject.slideNext();
     updateButtonsState(); // Оновлюємо стан кнопок
     console.log('Натискається клавіша Вправо');
   } else if (evt.code === 'ArrowLeft') {
-    swiper.slidePrev();
+    swiperProject.slidePrev();
     updateButtonsState(); // Оновлюємо стан кнопок;
     console.log('Натискається клавіша Вліво');
   }
