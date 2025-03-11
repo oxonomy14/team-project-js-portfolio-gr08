@@ -137,10 +137,12 @@
 
 .swiper-project-btn-prev:hover,
 .swiper-project-btn-prev:focus {
+  border: 1px solid rgba(250, 250, 250, 0.5);
 }
 
 .swiper-project-btn-next:hover,
 .swiper-project-btn-next:focus {
+  border: 1px solid rgba(250, 250, 250, 0.4);
 }
 
 .swiper-project-btn-disabled {
