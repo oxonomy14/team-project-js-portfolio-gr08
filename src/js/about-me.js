@@ -37,33 +37,11 @@ const swiperSkills = new Swiper('.swiperr', {
   },
 });
 
-/* ------------------------ */
-
-// const updateFirstSlide = () => {
-//     document.querySelectorAll('.swiperr .swiper-slide').forEach(slide => {
-//         slide.classList.remove('first-slide'); // Удаляем класс у всех слайдов
-//     });
-
-//     const firstVisibleSlide = document.querySelector(
-//         '.swiperr .swiper-slide-active'
-//     );
-//     if (firstVisibleSlide) {
-//         firstVisibleSlide.classList.add('first-slide'); // Добавляем класс первому видимому слайду
-//     }
-// };
-
-// Устанавливаем цвет при загрузке
-//updateFirstSlide();
-
-// Обновляем цвет при смене слайдов
-//swiperSkills.on('slideChange', updateFirstSlide);
-
-/* ---------------------------------- */
-
-// elemSkillsBtnNext.addEventListener('click', evt => {
-
-//     swiperSkills.slideNext();
-// });
+window.addEventListener('keydown', evt => {
+  if (evt.code === 'ArrowRight') {
+    swiperSkills.slideNext();
+  }
+});
 
 const accordionParams = {
   openOnInit: [0],

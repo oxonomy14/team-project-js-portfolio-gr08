@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
+//import { Navigation } from 'swiper/modules';
 
 const elemProjectBtnNext = document.querySelector('.swiper-project-btn-next');
 const elemProjectBtnPrev = document.querySelector('.swiper-project-btn-prev');
@@ -7,14 +8,19 @@ const elemProjectBtnPrev = document.querySelector('.swiper-project-btn-prev');
 const swiperProject = new Swiper('.swiperrr', {
   speed: 900,
   spaceBetween: 400,
+  //modules: [Navigation],
   on: {
     slideChange: updateButtonsState, // Викликаємо функцію при зміні слайду
   },
   touchRatio: 1, // Дозволяє свайпи
   allowTouchMove: true, // Вмикає можливість свайпу
+  // navigation: {
+  //   nextEl: '.swiper-project-btn-next',
+  //   prevEl: '.swiper-project-btn-prev',
+  //},
 });
 
-// Функція для оновлення стану кнопок
+Функція для оновлення стану кнопок
 function updateButtonsState() {
   if (swiperProject.isBeginning) {
     elemProjectBtnPrev.classList.add('swiper-project-btn-disabled');
@@ -57,5 +63,5 @@ window.addEventListener('keydown', evt => {
   }
 });
 
-// Викликаємо функцію один раз, щоб встановити правильний стан кнопок на початку
+Викликаємо функцію один раз, щоб встановити правильний стан кнопок на початку
 updateButtonsState();
