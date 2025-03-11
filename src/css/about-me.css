@@ -232,14 +232,13 @@
 }
 
 .skills-arrow-next {
-  width: 28px;
-  height: 28px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 0;
   cursor: pointer;
   background-color: #1c1d20;
+  padding: 0;
 }
 
 .skills-arrow-icon {
@@ -272,6 +271,7 @@
   /*--------- SKILLS MEDIA ----- */
 
   .about-skills {
-    padding-right: 176px;
+    padding-right: 112px;
+    margin: 0 32px;
   }
 }
