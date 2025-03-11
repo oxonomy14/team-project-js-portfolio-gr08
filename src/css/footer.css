@@ -112,7 +112,7 @@
 @media only screen and (min-width: 1440px) {
     .footer-form-container {
         gap: 86px;
-        max-width: 954px;
+        max-width: 1050px;
     }
 }
 
@@ -121,6 +121,7 @@
     flex-direction: column;
     gap: 16px;
     max-width: 100%;
+    position: relative;
 }
 
 @media only screen and (min-width: 768px) {
@@ -144,6 +145,7 @@
     border: none;
     border-bottom: 1px solid #555;
     padding: 8px 0;
+    background-color: transparent;
     outline: none;
 }
 
@@ -157,6 +159,35 @@
 @media only screen and (min-width: 1440px) {
     .footer-input {
         width: 390px;
+    }
+}
+
+.success-message {
+        color: green;
+            margin-top: 4px;
+            font-size: 14px;
+            position: absolute;
+            right:143px;
+            bottom: 40px;
+            width: 100%;
+            display: none;
+            transition: opacity 0.3s ease-in-out;
+            text-align: center;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .success-message {
+        right: 230px;
+            bottom: 30px;
+            font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .success-message {
+    right: 375px;
+        bottom: 30px;
     }
 }
 
