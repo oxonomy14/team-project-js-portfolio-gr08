@@ -63,6 +63,7 @@
   margin-left: auto;
   background: transparent;
   transition: transform 0.3s ease-in-out;
+  flex-shrink: 0;
 }
 
 #btn-open:hover,
@@ -120,10 +121,14 @@
 
   .faq-answer {
     padding-top: 26px;
+    max-width: 656px;
   }
 
   .ac#faq-item:last-child {
     padding-bottom: 24px;
+  }
+  .ac-header#faq-header {
+    max-width: 550px;
   }
 }
 
