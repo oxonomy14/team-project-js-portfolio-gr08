@@ -20,7 +20,7 @@ const swiperProject = new Swiper('.swiperrr', {
   //},
 });
 
-Функція для оновлення стану кнопок
+// Функція для оновлення стану кнопок
 function updateButtonsState() {
   if (swiperProject.isBeginning) {
     elemProjectBtnPrev.classList.add('swiper-project-btn-disabled');
@@ -63,5 +63,5 @@ window.addEventListener('keydown', evt => {
   }
 });
 
-Викликаємо функцію один раз, щоб встановити правильний стан кнопок на початку
+// Викликаємо функцію один раз, щоб встановити правильний стан кнопок на початку
 updateButtonsState();
