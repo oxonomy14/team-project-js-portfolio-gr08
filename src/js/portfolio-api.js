@@ -11,7 +11,7 @@ export async function fetchReviews() {
   } catch (error) {
     iziToast.error({
       title: 'Error',
-      message: 'Error fetching reviews',
+      message: 'Error fetching reviews! Помилка отримання відгуків! ',
       position: 'topRight',
     });
     return [];
