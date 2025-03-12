@@ -2,16 +2,40 @@
   <div class="container header-container">
     <div class="header-logo">
       <a href="./index.html" class="header-logo-link">
-        <img
-          class="header-img"
-          srcset="
-            /img/header/logo-header.webp    1x,
-            /img/header/logo-header@2x.webp 2x
-          "
-          alt="Lloyd Jeferson logo"
-          width="80"
-          height="80"
-        />
+        <picture>
+          <source
+            srcset="
+              /img/header/logo-header.webp    1x,
+              /img/header/logo-header@2x.webp 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              /img/header/logo-header.webp    1x,
+              /img/header/logo-header@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /img/header/logo-header.webp    1x,
+              /img/header/logo-header@2x.webp 2x
+            "
+            media="(min-width: 1440px)"
+          />
+          <img
+            src="/img/header/logo-header.webp"
+            srcset="
+              /img/header/logo-header.webp    1x,
+              /img/header/logo-header@2x.webp 2x
+            "
+            alt="Lloyd Jeferson logo"
+            width="80"
+            class="header-img"
+            height="80"
+          />
+        </picture>
         <span class="header-span-logo">jefferson*</span>
       </a>
     </div>
