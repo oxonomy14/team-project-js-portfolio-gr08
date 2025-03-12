@@ -59,16 +59,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
          if (emailPattern.test(email)) {
             successMessage.textContent = "Success!";
-            successMessage.style.display = "block"; // Показуємо повідомлення
+            successMessage.style.display = "block"; 
 
-            // Додаємо повідомлення під інпут, якщо його ще немає
+           
             if (!emailInput.nextElementSibling || emailInput.nextElementSibling !== successMessage) {
                 emailInput.insertAdjacentElement('afterend', successMessage);
             }
         } else {
-            successMessage.style.opacity = "0"; // Ховаємо повідомлення, якщо пошта не валідна
+            successMessage.style.opacity = "0"; 
 
-            // Видаляємо повідомлення з DOM, якщо пошта не валідна
             if (emailInput.nextElementSibling === successMessage) {
                 emailInput.nextElementSibling.remove();
             }
@@ -86,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
             iziToast.error({
                 title: 'Error',
                 message: 'Please enter a valid email address!',
-                position: 'topRight'
+                position: 'bottomRight'
             });
             return;
         }
@@ -95,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
             iziToast.error({
                 title: 'Error',
                 message: 'The comments field cannot be empty!',
-                position: 'topRight'
+                position: 'bottomRight'
             });
             return;
         }
@@ -116,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 iziToast.success({
                     title: 'Success',
                     message: 'Your request has been sent successfully!',
-                    position: 'topRight'
+                    position: 'bottomRight'
                 });
 
                 if (emailInput.nextElementSibling === successMessage) {
@@ -127,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 iziToast.error({
                     title: 'Error',
                     message: 'An error occurred, please try again!',
-                    position: 'topRight'
+                    position: 'bottomRight'
                 });
                 console.error("Error:", error);
             });
