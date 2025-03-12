@@ -14,49 +14,64 @@
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
-  overflow: hidden;
-  background-image: url(/img/covers/back-mob.png);
+  background-image: url(/img/covers/back-mob.webp);
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
+  overflow: hidden;
 }
 
 @media screen and (min-resolution: 2dppx),
   (min-resolution: 192dpi),
   (-webkit-min-device-pixel-ratio: 2) {
   .cover-wrapper {
-    background-image: url(/img/covers/back-mob-2x.png);
+    background-image: url(/img/covers/back-mob-2x.webp);
   }
 }
 
 .sub-wrapper {
   position: absolute;
-  transform: rotate(16deg) translateY(-50%);
-  width: 100%;
+  width: 282px;
+  height: 162px;
+  transform: rotate(16deg) scale(0.894);
+  transform-origin: center;
+}
+
+.sub-wrapper:nth-child(1) {
+  left: -30px;
+  top: -70px;
 }
 
 .sub-wrapper:nth-child(2) {
   left: -175px;
-  top: 150px;
+  top: 72px;
 }
 
 .sub-wrapper:nth-child(3) {
   left: -105px;
-  top: 370px;
+  top: 280px;
 }
 
 .sub-wrapper:nth-child(4) {
-  left: -161px;
-  top: 555px;
+  left: -10px;
+  top: 500px;
 }
 
 .cover-list {
   display: flex;
-  gap: 24px;
+  gap: 36px;
 }
 
 .cover-items {
   flex: 0 0 auto;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 282px;
+  height: 162px;
 }
 
 .cover-img {
@@ -72,70 +87,74 @@
 @media only screen and (min-width: 768px) {
   .cover-wrapper {
     max-width: 768px;
-    min-width: none;
     height: 960px;
-    background-image: url(/img/covers/back-tab.png);
+    background-image: url(/img/covers/back-tab.webp);
   }
 
   @media screen and (min-resolution: 2dppx),
     (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2) {
     .cover-wrapper {
-      background-image: url(/img/covers/back-tab-2x.png);
+      background-image: url(/img/covers/back-tab-2x.webp);
     }
   }
 
+  .sub-wrapper {
+    transform: rotate(16deg) scale(1.722);
+  }
+
+  .sub-wrapper:nth-child(1) {
+    left: 10px;
+    top: -116px;
+  }
+
   .sub-wrapper:nth-child(2) {
-    left: -384px;
-    top: 270px;
+    left: -284px;
+    top: 143px;
   }
 
   .sub-wrapper:nth-child(3) {
-    left: -105px;
-    top: 730px;
+    left: -130px;
+    top: 536px;
   }
 
   .sub-wrapper:nth-child(4) {
     left: -161px;
-    top: 1100px;
-  }
-
-  .cover-list {
-    gap: 48px;
+    top: 880px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .cover-wrapper {
     max-width: 1440px;
-    background-image: url(/img/covers/back-desk.png);
+    background-image: url(/img/covers/back-desk.webp);
   }
 
   @media screen and (min-resolution: 2dppx),
     (min-resolution: 2dpi),
     (-webkit-min-device-pixel-ratio: 2) {
     .cover-wrapper {
-      background-image: url(/img/covers/back-desk-2x.png);
+      background-image: url(/img/covers/back-desk-2x.webp);
     }
   }
 
   .sub-wrapper:first-child {
     left: 347px;
-    top: 216px;
+    top: -60px;
   }
 
   .sub-wrapper:nth-child(2) {
     left: -47px;
-    top: 476px;
+    top: 183px;
   }
 
   .sub-wrapper:nth-child(3) {
     left: -20px;
-    top: 860px;
+    top: 550px;
   }
 
   .sub-wrapper:nth-child(4) {
     left: -21px;
-    top: 1240px;
+    top: 920px;
   }
 }
