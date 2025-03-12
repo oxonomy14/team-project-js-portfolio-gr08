@@ -1,4 +1,3 @@
-/* ------- ABOUT-WRAPPER -------- */
 .about-wrapper {
   margin-bottom: 32px;
 }
@@ -72,7 +71,7 @@
   }
 }
 
-/* ------- ABOUT-SKILS ------ */
+
 .about-content {
   margin-bottom: 32px;
 }
@@ -188,7 +187,7 @@
   }
 }
 
-/* ---------CSS SWIPPER -------- */
+
 
 .about-skills {
   position: relative;
@@ -260,8 +259,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  /*--------- SKILLS MEDIA ----- */
-
   .about-skills {
     padding-right: 112px;
     margin: 0 32px;
