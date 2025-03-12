@@ -9,7 +9,8 @@ import { Navigation } from 'swiper/modules';
 const elemSkillsBtnNext = document.querySelector('.skills-arrow-next');
 
 const swiperSkills = new Swiper('.swiperr', {
-  speed: 900,
+    speed: 400,
+  easing: 'ease-in-out',
   loop: true,
 
   modules: [Navigation],
