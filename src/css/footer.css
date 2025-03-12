@@ -3,7 +3,7 @@
 .footer {
     margin: 0 auto;
     padding: 32px 16px;
-    background-image: url('/img/footer/footer-bcg-img-mob.png');
+    background-image: url('/img/footer/footer-bcg-img-mob.webp');
     background-position: right center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
         padding-left: 32px;
         padding-bottom: 169px;
         padding-right: 32px;
-        background-image: url('/img/footer/footer-bcg-img-tab.png');
+        background-image: url('/img/footer/footer-bcg-img-tab.webp');
     }
 }
 
@@ -23,7 +23,7 @@
     .footer {
         padding-left: 196px;
         padding-right: 196px;
-        background-image: url('/img/footer/footer-bcg-img-desk.png');
+        background-image: url('/img/footer/footer-bcg-img-desk.webp');
     }
 }
 
