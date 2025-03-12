@@ -271,6 +271,9 @@ padding-top: 64px;
 }
 
 @media only screen and (min-width: 1440px) {
+  .about-me {
+      padding-top: 96px;
+    }
   .about-skills {
     padding-right: 112px;
     margin: 0 32px;
