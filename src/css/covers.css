@@ -100,7 +100,7 @@
   }
 
   .sub-wrapper {
-    transform: rotate(16deg) scale(1.722);
+    transform: rotate(16deg) scale(0.893);
   }
 
   .sub-wrapper:nth-child(1) {
