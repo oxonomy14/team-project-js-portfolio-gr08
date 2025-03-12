@@ -1,8 +1,13 @@
 //import Swiper from 'swiper';
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+// import Swiper from 'swiper/bundle';
+// import 'swiper/css/bundle';
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 
 const elemSkillsBtnNext = document.querySelector('.skills-arrow-next');
 
@@ -10,6 +15,7 @@ const swiperSkills = new Swiper('.swiperr', {
   speed: 900,
   loop: true,
 
+   modules: [Navigation],
   navigation: {
     nextEl: '.skills-arrow-next',
   },
