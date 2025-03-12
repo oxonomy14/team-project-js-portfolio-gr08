@@ -12,29 +12,7 @@
 
 .reviews-swiper {
   visibility: visible;
-  /* display: flex; */
-  /* flex-wrap: wrap;
-  justify-content: center; */
-
 }
-
-/* .reviews-swiper-wrapper.swiper-wrapper {
-  display: flex;
-  align-items: stretch;
-  height: auto;
-}
-
-.reviews-swiper-slide.swiper-slide {
-  height: auto;
-  display: flex;
-} */
-
-/* .swiper-slide.reviews-swiper-slide{
-  display: flex;
-  align-items: str7etch;
-  height: auto;
-  width: 344px;
-} */
 
 .swiper-slide.reviews-swiper-slide {
   border: 1px solid rgba(250, 250, 250, 0.2);
@@ -43,9 +21,6 @@
   height: auto;
   width: 344px;
   margin-bottom: 32px;
-
-  /* flex-direction: column;
-  flex: 1 1 auto; */
 }
 
 .reviews-img {
@@ -74,15 +49,14 @@
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
   flex-grow: 1;
-  /* display: flex; */
 }
 
 .reviews-buttons-swiper {
   display: flex;
   justify-content: space-between;
-  gap: 12px; /* todo media запит */
-  width: 116px; /* todo media запит */
-  height: 52px; /* todo media запит */
+  gap: 12px;
+  width: 116px;
+  height: 52px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -97,21 +71,6 @@
   left: 0;
 }
 
-/* .reviews-buttons-swiper .reviews-swiper-button-prev,
-.reviews-buttons-swiper .reviews-swiper-button-next {
-  display: flex;
-  position: relative;
-  border: 1px solid rgba(250, 250, 250, 0.5);
-  border-radius: 60px;
-  padding: 14px;
-  width: 52px;
-  height: 52px;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-} */
-
-/* =================================== */
 .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
@@ -158,6 +117,10 @@
     width: 156px;
     height: 68px;
     bottom: 12px;
+  }
+  .reviews-buttons-swiper .reviews-swiper-button-icon {
+    width: 32px;
+    height: 32px;
   }
 
   .reviews-buttons-swiper .reviews-swiper-button-prev,
