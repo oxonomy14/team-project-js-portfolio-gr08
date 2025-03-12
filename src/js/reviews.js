@@ -33,16 +33,19 @@ function initSwiper() {
     modules: [Navigation],
     slidesPerView: 1,
     spaceBetween: 16,
-
+    // slidesPerGroup: 1,
     breakpoints: {
       375: {
         slidesPerView: 1,
+        slidesPerGroup: 1,
       },
       768: {
         slidesPerView: 2,
+        slidesPerGroup: 1,
       },
       1440: {
         slidesPerView: 4,
+        slidesPerGroup: 1,
       },
     },
     navigation: {
