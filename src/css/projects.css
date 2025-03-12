@@ -107,63 +107,54 @@
 
 .swiper-project-button {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   gap: 12px;
+  width: 116px;
+  height: 52px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
+
+.swiper-project-btn-next.swiper-button-next {
+  right: 0;
+}
+
+.swiper-project-btn-prev.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-project-button .swiper-project-btn-prev,
+.swiper-project-button .swiper-project-btn-next {
+  display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.swiper-project-btn-prev {
-  background-color: #1c1d20;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 60px;
-  padding: 14px;
   width: 52px;
   height: 52px;
-  cursor: pointer;
-  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.swiper-project-btn-next {
-  background-color: #1c1d20;
   border: 1px solid rgba(250, 250, 250, 0.5);
-  border-radius: 60px;
-  padding: 14px;
-  width: 52px;
-  height: 52px;
+  border-radius: 50%;
+  background-color: transparent;
   cursor: pointer;
-  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease-in-out;
 }
 
-.swiper-project-btn-prev:hover,
-.swiper-project-btn-prev:focus {
-  border: 1px solid rgba(250, 250, 250, 0.5);
+.swiper-project-button .swiper-project-btn-prev:hover,
+.swiper-project-button .swiper-project-btn-next:hover {
+  background-color: rgba(250, 250, 250, 0.1);
 }
 
-.swiper-project-btn-next:hover,
-.swiper-project-btn-next:focus {
-  border: 1px solid rgba(250, 250, 250, 0.4);
-}
-
-.swiper-project-btn-disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.swiper-project-btn-prev-icon-svg {
-  fill: transparent;
-  stroke: #3b3b3b;
+.swiper-project-button .swiper-project-btn-icon-svg {
   width: 24px;
   height: 24px;
-}
-
-.swiper-project-btn-next-icon-svg {
-  fill: transparent;
   stroke: #fafafa;
-  width: 24px;
-  height: 24px;
+  fill: none;
 }
-
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
@@ -176,7 +167,6 @@
   }
 
   .swiper-slide-project-describe {
-    /*height: 625px;*/
     padding: 64px 0 64px 64px;
   }
 
@@ -207,29 +197,25 @@
     height: 625px;
     padding: 120px 45px;
   }
-
   .swiper-project-button {
     gap: 20px;
-  }
-
-  .swiper-project-btn-prev {
-    padding: 18px;
-    width: 68px;
+    width: 156px;
     height: 68px;
+    bottom: 12px;
   }
-
-  .swiper-project-btn-next {
-    padding: 18px;
-    width: 68px;
-    height: 68px;
-  }
-
-  .swiper-project-btn-prev-icon-svg {
+  .swiper-project-button .reviews-swiper-button-icon {
     width: 32px;
     height: 32px;
   }
 
-  .swiper-project-btn-next-icon-svg {
+  .swiper-project-button .swiper-project-btn-prev,
+  .swiper-project-button .swiper-project-btn-next {
+    width: 68px;
+    height: 68px;
+    padding: 18px;
+  }
+
+  .swiper-project-btn-icon-svg {
     width: 32px;
     height: 32px;
   }
@@ -260,8 +246,9 @@
 
     padding: 120px 37px;
   }
-
   .swiper-project-button {
     gap: 20px;
+    width: 156px;
+    height: 68px;
   }
 }
