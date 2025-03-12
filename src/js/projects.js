@@ -13,7 +13,7 @@ const elemProjectBtnPrev = document.querySelector('.swiper-project-btn-prev');
 const swiperProject = new Swiper('.swiperrr', {
   modules: [Navigation],
   slidesPerView: 1,
-      slidesPerGroup: 1,
+  slidesPerGroup: 1,
   speed: 900,
   spaceBetween: 400,
   // on: {
@@ -24,8 +24,8 @@ const swiperProject = new Swiper('.swiperrr', {
   navigation: {
     // nextEl: '.swiper-project-btn-next',
     // prevEl: '.swiper-project-btn-prev',
-       nextEl: '.reviews-swiper-button-next',
-      prevEl: '.reviews-swiper-button-prev',
+    nextEl: '.reviews-swiper-button-next',
+    prevEl: '.reviews-swiper-button-prev',
   },
 });
 
