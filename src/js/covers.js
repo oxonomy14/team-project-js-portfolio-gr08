@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach(entry => {
-        if (entry.isIntersecting > 0.1) {
+        if (entry.isIntersecting) {
           coverImages.forEach(image => image.classList.add('in-view'));
         } else {
           coverImages.forEach(image => image.classList.remove('in-view'));

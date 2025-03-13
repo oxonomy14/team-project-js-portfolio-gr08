@@ -131,7 +131,7 @@
   }
 
   @media screen and (min-resolution: 2dppx),
-    (min-resolution: 2dpi),
+    (min-resolution: 192dpi),
     (-webkit-min-device-pixel-ratio: 2) {
     .cover-wrapper {
       background-image: url(/img/covers/back-desk-2x.webp);
